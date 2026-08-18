@@ -1,2 +1,2 @@
-# small-fry
+# Small Fry
 Small Fry Band Website
