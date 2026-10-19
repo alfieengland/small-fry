@@ -18,6 +18,10 @@ html {
   height: calc(100% / 3);
 }
 
+.homepage-links {
+  font-family: 'Lato', sans-serif;
+}
+
 #logo-text {
   text-align: center;
   vertical-align: middle;
@@ -108,8 +112,12 @@ canvas {
   scroll-snap-align: start;
 }
 
-#band-members {
+.scroll-snap-child p {
+  font-size: 250%;
+}
 
+#band-members {
+  font-family: 'VT323', sans-serif;
 }
 
 .homepage-member {
@@ -120,6 +128,7 @@ canvas {
   padding-right: 15%;
   padding-bottom: 10%;
   position: relative;
+  overflow: hidden;
 }
 
 .homepage-member-odd {
@@ -146,11 +155,11 @@ canvas {
 
 .homepage-member h1 {
   padding-bottom: 4%;
-  font-size: 650%;
+  font-size: 1050%;
 }
 
 .homepage-member h2 {
-  font-size: 150%;
+  font-size: 450%;
   padding-left: 1%;
   padding-right: 1%;
 }
@@ -169,5 +178,29 @@ canvas {
 }
 
 .homepage-will {
-  background-color: #cbb1e6;
+  background-color: #926eb8;
+}
+
+#member-img {
+  height: 350px;
+  width: auto;
+  transition: transform 0.5s;
+  animation: glowPulse 2s infinite alternate ease-in-out;
+}
+
+#member-img:hover {
+  transform: scale(1.5);
+  /*transform: translate(10%, -10%);*/
+
+}
+
+@keyframes glowPulse {
+  0% {
+    filter: drop-shadow(0 0 25px rgba(255, 255, 255, 1.0))
+            drop-shadow(0 0 35px rgba(255, 255, 255, 1.0));
+  }
+  100% {
+    filter: drop-shadow(0 0 500px rgba(0, 0, 0, 0.9))
+            drop-shadow(0 0 900px rgba(0, 0, 0, 0.9));
+  }
 }
