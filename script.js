@@ -18,11 +18,11 @@ function afterPageLoads() {
     canvas.style.height = "60vh";
   },1400)
 
-  /* Randomize Band Member Load order*/
+  /* Randomize Band Member Load order */
   var members = $(".homepage-member");
   for(var i = 0; i < members.length; i++){
-      var target = Math.floor(Math.random() * members.length -1) + 0;
-      var target2 = Math.floor(Math.random() * members.length -1) + 0;
+      var target = Math.floor(Math.random() * members.length -1) + 1;
+      var target2 = Math.floor(Math.random() * members.length -1) + 1;
       members.eq(target).before(members.eq(target2));
       members[i].classList.add('homepage-member-sorted');
   }
