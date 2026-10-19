@@ -1,0 +1,168 @@
+/* CSS Variables or "Custom Properties" */
+:root {
+  /* https://www.w3schools.com/colors/colors_picker.asp If needed for BG colours */
+  --bg-1: #cedede;
+  --bg-2: #a1c8d6;
+  --bg-3: #8cd1d1;
+  --bg-4: #4bb8b8;
+  --bg-5: #38a6a6;
+}
+
+html {
+  /*background: linear-gradient(var(--bg-1) 0%, var(--bg-2) 47%, var(--bg-3) 72%, var(--bg-4) 90%, var(--bg-5) 100%);*/
+  /*background: radial-gradient(circle, var(--bg-1) 0%, var(--bg-2) 47%, var(--bg-3) 72%, var(--bg-4) 90%, var(--bg-5) 100%);*/
+  /*background: radial-gradient(circle, #F2A341, #F27F3D, #0D0D0D)*/
+}
+
+.homepage, #canvas {
+  height: calc(100% / 3);
+}
+
+#logo-text {
+  text-align: center;
+  vertical-align: middle;
+  opacity: 0;
+}
+
+#logo-text img {
+  max-width: 65%;
+}
+
+.row-top, .row-top-other {
+  padding-bottom: 5px;
+}
+
+.row-top a, .row-top-other a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  transition: all 0.2s ease;
+  letter-spacing: 10px;
+}
+
+.row-top h1, .row-top-other h1 {
+  padding-top: 18px;
+}
+
+.row-top a:hover, .row-top-other a:hover {
+  font-size: 150%;
+}
+
+.row-top, .row-bottom, .row-top-other {
+  background-color: #0D0D0D;
+  color: #fff;
+}
+
+.col-links {
+  position: relative;
+  vertical-align: bottom;
+  text-align: center;
+}
+
+#links {
+  font-size: 210%;
+}
+
+#links-other {
+  font-size: 310%;
+}
+
+canvas {
+  filter: blur(20px) contrast(2);
+  width: 100%;
+  z-index: -10;
+  position: absolute;
+  left: 0;
+}
+
+.pixel {
+  transform: translate(0px, 100px);
+  /* transition: transform 2000ms ease-out; */
+}
+
+/* For JS PageLoad Cinematic/Bars Increase Size */
+#logo-text, #row-top, #row-middle, #row-bottom, #canvas, .row-top-other {
+  transition: height 1.5s ease-in-out, opacity 2.6s ease-in-out;
+}
+
+/* Band Page / Other pages */
+.row-top-other, .other-pages {
+  height: calc(100% / 5);
+}
+
+.col-links-other {
+  position: relative;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#scroll-snap {
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: both mandatory;
+  scroll-behavior: smooth;
+}
+
+.scroll-snap-child {
+  scroll-snap-align: start;
+}
+
+#band-members {
+
+}
+
+.homepage-member {
+  width: 100%;
+  height: 100vh;
+  padding-top: 8%;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 10%;
+  position: relative;
+}
+
+.homepage-member-odd {
+
+}
+
+.homepage-member-even {
+  text-align: right;
+}
+
+.homepage-member-odd img {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+.homepage-member-even img {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+
+.homepage-member h1 {
+  padding-bottom: 4%;
+  font-size: 650%;
+}
+
+.homepage-member h2 {
+  font-size: 150%;
+}
+
+.homepage-alfie {
+  background-color: #f9d597;
+}
+
+.homepage-meg {
+  background-color: #ed979c;
+}
+
+.homepage-sean {
+  background-color: #8ed1e6;
+}
+
+.homepage-will {
+  background-color: #cbb1e6;
+}

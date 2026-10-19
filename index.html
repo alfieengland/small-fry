@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- Meta Needed for mediaqueries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <title>Small Fry</title>
+    <link rel="stylesheet" type="text/css" href="css/eric-meyer-reset.css">
+    <link rel="stylesheet" type="text/css" href="css/ungrid.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/mediaqueries.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+    <script type="text/javascript" src="jquery.js"></script>
+    <script src="script.js"></script>
+    <script src="watercolour.js" defer></script>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon.ico"/>
+  </head>
+  <body>
+    <div id="scroll-snap">
+      <div class="row homepage row-top scroll-snap-child" id="row-top">
+        <div class="col col-links-margin"></div>
+        <div class="col col-links"><a href="#band-members"><h1 id="links">THE BAND</h1></a></div>
+        <div class="col col-links"><a href="#"><h1 id="links">THE GIGS</h1></a></div>
+        <div class="col col-links"><a href="#"><h1 id="links">THE MERCH</h1></a></div>
+        <div class="col col-links-margin"></div>
+      </div>
+      <canvas id="canvas"></canvas>
+      <div class="row homepage row-middle" id="row-middle">
+        <div class="col" id="logo-text">
+          <img src="img/text.png" alt="Small Fry Text Title"></img>
+          <div class="pixel">
+            <img id="pixel-odd" src="img/pixel/S.gif" alt="Sean Pixel Art Gif"></img>
+            <img id="pixel-even" src="img/pixel/M.gif" alt="Meg Pixel Art Gif"></img>
+            <img id="pixel-odd" src="img/pixel/A.gif" alt="Alfie Pixel Art Gif"></img>
+            <img id="pixel-even" src="img/pixel/W.gif" alt="Will Pixel Art Gif"></img>
+          </div>
+          <!--<img src="img/band-gif.gif" alt="Small Fry Pixel Gif"></img>-->
+        </div>
+      </div>
+      <div class="row homepage row-bottom" id="row-bottom">
+        <div class="col"></div>
+      </div>
+
+      <div id="band-members">
+        <!-- Band Members-->
+        <div class="row homepage-member homepage-alfie scroll-snap-child">
+          <div class="col homepage-alfie">
+            <h1>Alfie</h1>
+            <h2>Rhythm Guitar & (Sort of) Bass</h2>
+            <img src="img/pixel/A.gif" alt="Alfie Pixel Art Gif"></img>
+          </div>
+        </div>
+
+        <div class="row homepage-member homepage-meg scroll-snap-child">
+          <div class="col homepage-meg">
+            <h1>Meg</h1>
+            <h2>Lead Singer</h2>
+            <img src="img/pixel/M.gif" alt="Meg Pixel Art Gif"></img>
+          </div>
+        </div>
+
+        <div class="row homepage-member homepage-sean scroll-snap-child">
+          <div class="col homepage-sean">
+            <h1>Sean</h1>
+            <h2>Lead Guitar</h2>
+            <img src="img/pixel/S.gif" alt="Sean Pixel Art Gif"></img>
+          </div>
+        </div>
+
+        <div class="row homepage-member homepage-will scroll-snap-child">
+          <div class="col homepage-will">
+            <h1>Will</h1>
+            <h2>Drummer</h2>
+            <img src="img/pixel/W.gif" alt="Will Pixel Art Gif"></img>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
