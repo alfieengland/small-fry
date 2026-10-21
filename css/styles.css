@@ -242,3 +242,48 @@ canvas {
 .dates-centre h2 {
   font-size: 2vw;
 }
+
+/* -------- Media Queries -------- */
+/* From another project
+@media screen and (min-width: 1050px) {
+  .content {
+    margin-left: 18vw;
+    margin-right: 18vw;
+  }
+} */
+
+/* From another project
+@media (max-resolution: 1dppx) {
+    .content {
+      font-size: 100%;
+    }
+}
+*/
+
+@media screen and (max-width: 650px) {
+  .homepage-links {
+    font-size: auto;
+    opacity: 1 !important;
+    margin-bottom: 4vh;
+  }
+
+  #row-top {
+    height: 30vh;
+  }
+
+  #member-img {
+    height: 20vh;
+  }
+
+  .homepage-member p {
+    font-size: 150%;
+  }
+
+  .homepage-member h2 {
+    font-size: 150%;
+  }
+
+  #canvas {
+
+  }
+}
